@@ -11,3 +11,7 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount('#app')
+
+// Vue.prototype.$appName = 'My app'
+
+console.log(Vue.prototype)
