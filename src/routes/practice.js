@@ -7,5 +7,9 @@ export default [{
     path: 'dynamic-table',
     name: 'dynamic-table',
     component: () => import('../views/practice/DynamicTable.vue')
+  }, {
+    path: 'add-table-row',
+    name: 'add-table-row',
+    component: () => import('../views/practice/AddTableRow.vue')
   }]
 }]

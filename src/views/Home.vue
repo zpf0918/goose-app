@@ -12,6 +12,9 @@
     <p>
       <router-link to="/practice/dynamic-table">动态表格</router-link>
     </p>
+    <p>
+      <router-link to="/practice/add-table-row">添加表格数据后高亮</router-link>
+    </p>
   </div>
 </template>
 

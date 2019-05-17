@@ -34,8 +34,4 @@ export default {
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  max-width: 950px;
-}
 </style>
