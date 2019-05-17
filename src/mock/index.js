@@ -33,6 +33,6 @@ const dynamicTableData = {
   }]
 }
 
-export const mock = {
+export {
   dynamicTableData
 }

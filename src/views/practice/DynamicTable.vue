@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import { mock } from '@/mock'
+import { dynamicTableData } from '@/mock'
 
 export default {
   data () {
@@ -28,7 +28,7 @@ export default {
     }
   },
   created () {
-    this.tableData = mock.dynamicTableData
+    this.tableData = dynamicTableData
   }
 }
 </script>

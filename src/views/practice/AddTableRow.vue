@@ -47,6 +47,9 @@ export default {
         name: `人物${this.list.length + 1}`,
         age: 18
       })
+      this.hideHighLight()
+    },
+    hideHighLight () {
       setTimeout(() => {
         this.isHighLight = false
       }, 1000)
