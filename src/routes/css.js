@@ -11,5 +11,9 @@ export default [{
     path: 'aside',
     name: 'aside',
     component: () => import('../views/css/Aside.vue')
+  }, {
+    path: 'center',
+    name: 'center',
+    component: () => import('../views/css/Center.vue')
   }]
 }]

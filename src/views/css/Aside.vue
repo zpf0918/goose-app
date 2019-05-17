@@ -1,14 +1,13 @@
 <template>
   <div class="aside">
     <div class="modal"></div>
-    <div class="modal-card"> 
+    <div class="modal-card">
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  
 }
 </script>
 
@@ -39,4 +38,3 @@ export default {
   }
 }
 </style>
-
