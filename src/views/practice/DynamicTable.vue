@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import { dynamicTableData } from '@/mock'
+import { dynamicTableData } from '@/mock/practice/table.js'
 
 export default {
   data () {

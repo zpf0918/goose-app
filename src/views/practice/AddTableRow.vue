@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div :class="{ 'export-container': isClick }">
     <div style="float: right; margin: 10px 0;">
       <el-button type="primary" @click="add">添加数据</el-button>
     </div>
@@ -28,6 +28,7 @@
 </template>
 
 <script>
+
 export default {
   data () {
     return {
@@ -36,11 +37,14 @@ export default {
         name: '人物1',
         age: 18
       }],
-      isHighLight: false
+      isHighLight: false,
+      isClick: false
     }
   },
   methods: {
-    add () {
+    async add () {
+      this.isClick = true
+      await import('@/styles/export.scss')
       this.isHighLight = true
       this.list.unshift({
         order: `${this.list.length + 1 }`,
