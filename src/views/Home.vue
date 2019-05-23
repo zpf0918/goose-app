@@ -18,6 +18,9 @@
     <p>
       <router-link to="/async/async-promise">模拟async 和 promise </router-link>
     </p>
+    <p>
+      <router-link to="/async/promise-all-race">promise all and race</router-link>
+    </p>
   </div>
 </template>
 

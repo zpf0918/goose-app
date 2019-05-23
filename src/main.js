@@ -10,7 +10,6 @@ import '@/styles/index.scss'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI)
-console.log(store)
 
 new Vue({
   router,
