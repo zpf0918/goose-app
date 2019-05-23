@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 import cssRouter from './css'
 import practiceRouter from './practice'
+import asyncRouter from './async'
 
 Vue.use(Router)
 
@@ -16,6 +17,7 @@ export default new Router({
       component: () => import('../views/Home')
     },
     ...cssRouter,
-    ...practiceRouter
+    ...practiceRouter,
+    ...asyncRouter
   ]
 })

@@ -32,10 +32,6 @@ export default {
     this.tableData = dynamicTableData
   },
   mounted () {
-    // axios.get('http://api.myjson.com/bins/khn66')
-    // .then(function (value) {
-    //   console.log(value)
-    // })
     const getData = function (url) {
       return new Promise(function (resolve, reject) {
         var req = new XMLHttpRequest()
