@@ -50,7 +50,8 @@ export default {
         req.send()
       })
     }
-    var url= 'http://api.myjson.com/bins/khn66'
+    // var url= 'http://api.myjson.com/bins/khn66'
+    var url = '../../../static/index.json'
     getData(url).then(function onFullFilled(value) {
       console.log(value)
     }).catch(function onRejected(value) {
