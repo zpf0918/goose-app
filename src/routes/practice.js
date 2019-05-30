@@ -11,5 +11,13 @@ export default [{
     path: 'add-table-row',
     name: 'add-table-row',
     component: () => import('../views/practice/AddTableRow.vue')
+  }, {
+    path: 'debounce',
+    name: 'debounce',
+    component: () => import('../views/practice/Debounce.vue')
+  }, {
+    path: 'throttle',
+    name: 'throttle',
+    component: () => import('../views/practice/Throttle.vue')
   }]
 }]

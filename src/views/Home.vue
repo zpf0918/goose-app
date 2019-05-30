@@ -21,6 +21,12 @@
     <p>
       <router-link to="/async/promise-all-race">promise all and race</router-link>
     </p>
+    <p>
+      <router-link to="/practice/debounce">防抖</router-link>
+    </p>
+    <p>
+      <router-link to="/practice/throttle">节流</router-link>
+    </p>
   </div>
 </template>
 
