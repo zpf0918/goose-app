@@ -27,6 +27,9 @@
     <p>
       <router-link to="/practice/throttle">节流</router-link>
     </p>
+    <p>
+      <router-link to="/practice/dynamic-component">动态组件</router-link>
+    </p>
   </div>
 </template>
 

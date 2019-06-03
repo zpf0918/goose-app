@@ -19,5 +19,9 @@ export default [{
     path: 'throttle',
     name: 'throttle',
     component: () => import('../views/practice/Throttle.vue')
+  }, {
+    path: 'dynamic-component',
+    name: 'dynamic-component',
+    component: () => import('../views/practice/DynCom/DynCom.vue')
   }]
 }]
