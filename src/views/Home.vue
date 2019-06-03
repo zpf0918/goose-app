@@ -30,6 +30,9 @@
     <p>
       <router-link to="/practice/dynamic-component">动态组件</router-link>
     </p>
+    <p>
+      <router-link to="/practice/parent-and-children">父子组件</router-link>
+    </p>
   </div>
 </template>
 

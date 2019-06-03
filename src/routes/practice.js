@@ -23,5 +23,9 @@ export default [{
     path: 'dynamic-component',
     name: 'dynamic-component',
     component: () => import('../views/practice/DynCom/DynCom.vue')
+  }, {
+    path: 'parent-and-children',
+    name: 'parent-and-children',
+    component: () => import('../views/practice/ParAndChild/Parent.vue')
   }]
 }]
