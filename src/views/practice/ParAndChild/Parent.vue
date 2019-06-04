@@ -1,9 +1,9 @@
 <template>
-  <div>
-    <span>父组件</span>
-    <button @click="handleClick">increment</button>
-
-    <children :resPlatOrgId="demand.resPlatOrgId"></children>
+  <div id="parent">
+    <div id="test">{{ message }}</div>
+    <input type="text"  v-model="inputValue" @input="handleInput"/>
+    {{ inputValue }}
+    <button @click="updateMessage">点击</button>
   </div>
 </template>
 
@@ -16,20 +16,41 @@ export default {
   },
   data () {
     return {
-      demand: {
-        resPlatOrgId: ''
-      }
+      message: '未更新',
+      inputValue: '',
+      isShow: false
     }
+  },
+  created () {
+    // console.log(document.querySelector('#parent')) 
+  },
+  mounted () {
+    // console.log(document.querySelector('#parent')) 
+  },
+  updated () {
+    // console.log(1, document.querySelector('#test'))
   },
   methods: {
     handleClick () {
-      this.demand.resPlatOrgId = 'ok'
-      let that = this
-      setTimeout(() => {
-        Promise.resolve('2').then(function (res) {
-          that.demand.resPlatOrgId = res
-        })
-      }, 1000)
+      this.message = 'wewer'
+      this.$nextTick(() => {
+        this.message = this.message.toUpperCase()
+      })
+    },
+    updateMessage: function () {
+      this.message = '已更新'
+      this.isShow = true
+      console.log(this)
+      console.log(document.querySelector('#test').innerHTML)
+      // console.log(document.querySelector('#test'), document.querySelector('#test').innerText)
+      this.$nextTick(function () {
+        console.log(document.querySelector('#test').innerHTML)
+      })
+    },
+    handleInput (e) {
+      this.$nextTick(() => {
+        this.inputValue = this.inputValue.replace(/\s/g, '')
+      })
     }
   }
 }

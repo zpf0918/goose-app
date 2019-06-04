@@ -33,6 +33,9 @@
     <p>
       <router-link to="/practice/parent-and-children">父子组件</router-link>
     </p>
+    <p>
+      <router-link to="/practice/component-communicate">组件的跨级通讯</router-link>
+    </p>
   </div>
 </template>
 

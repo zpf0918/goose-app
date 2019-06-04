@@ -27,5 +27,9 @@ export default [{
     path: 'parent-and-children',
     name: 'parent-and-children',
     component: () => import('../views/practice/ParAndChild/Parent.vue')
+  }, {
+    path: 'component-communicate',
+    name: 'component-communicate',
+    component: () => import('../views/practice/ComponentCommunicate/Gradfather.vue')
   }]
 }]
