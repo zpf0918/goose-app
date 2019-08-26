@@ -18,4 +18,24 @@ export default {
     }
   }
 }
+
+// function unique(args) {
+//   if (!Array.isArray(args)) return
+
+//   const arr = []
+//   args.forEach(elem => {
+//     if (!arr.includes(elem)) {
+//       arr.push(elem)
+//     }
+//   })
+//   return arr
+// }
+
+// function unique(arr) {
+//   const result = arr.reduce((prev, next) => {
+//     if (!prev.includes(next)) { prev.push(next) }
+//     return prev
+//   }, [])
+//   return result
+// }
 </script>

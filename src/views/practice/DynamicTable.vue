@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container"> 
     <el-table
       :data="tableData.list"
       style="width: 100%;"
